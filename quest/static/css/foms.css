@@ -1,0 +1,11 @@
+.form {
+    background-color: #0e0909a8;
+    padding: 60px;
+    margin: 80px 0;
+
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    color: white;
+    border-radius: 0.3rem;
+}

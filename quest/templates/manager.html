@@ -8,21 +8,48 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/foms.css'%} ">
     <title>Manager</title>
 </head>
 
 <body>
+    <a href="admin/">admin</a>
     {% if messages %}
     {% for msg in messages %}
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        {{ msg}}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>!</strong>{{msg}}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
 
     {% endfor%}
     {% endif %}
-    <a href="/">back</a>
+    <form method="post" class="form" id="frm2">
+        {% csrf_token %}
+
+
+
+        <h5>Manager Login</h5>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="/" class="btn btn-primary">Back</a>
+    </form>
+
+
+
+    <script src="{% static 'js/index.js'%}"></script>
 </body>
 
 </html>

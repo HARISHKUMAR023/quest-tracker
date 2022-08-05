@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+
+
+}
+
+.c1 {
+    margin: 30px 30px;
+    background: rgb(246, 10, 7);
+    background: linear-gradient(105deg, rgba(246, 10, 7, 1) 21%, rgba(215, 108, 21, 1) 48%, rgba(205, 175, 25, 1) 100%);
+
+}
+
+.c2 {
+    margin: 30px 30px;
+    background: rgb(7, 246, 26);
+    background: linear-gradient(105deg, rgba(7, 246, 26, 1) 21%, rgba(0, 242, 174, 1) 48%, rgba(25, 180, 205, 1) 100%);
+}
+
+.mynavbar {
+
+    width: 150px;
+    height: 100vh;
+    background: rgb(7, 96, 246);
+    background: linear-gradient(105deg, rgba(7, 96, 246, 1) 21%, rgba(0, 188, 242, 1) 85%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+
+}
+
+.stausbar {
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+li {
+    font-family: 'Poppins', sans-seri;
+    list-style: none;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-help>li {
+    margin-bottom: 0;
+}
+
+li:hover {
+    background-color: #08060663;
+    color: white;
+    border-radius: 0.1rem;
+
+}
+
+li>a:hover {
+    color: azure;
+}
+
+li>a {
+    color: white;
+
+
+
+
+}
+
+
+.nav-help {
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.dashboard {
+
+    display: flex;
+}
